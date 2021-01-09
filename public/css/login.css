@@ -1,6 +1,6 @@
 .login-section {
   background-attachment: fixed;
-  min-height: 600px;
+  min-height: 500px;
   background-image: linear-gradient(white, white);
 }
 
@@ -9,7 +9,7 @@
 }
 
 .login-section .login-inner {
-  padding-top: 75px;
+  padding-top: 25px;
 }
 
 .login-section .card-form {
