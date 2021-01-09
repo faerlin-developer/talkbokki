@@ -1,0 +1,38 @@
+.login-section {
+  background-attachment: fixed;
+  min-height: 600px;
+  background-image: linear-gradient(white, white);
+}
+
+#h-subtitle {
+  font-size: 1em;
+}
+
+.login-section .login-inner {
+  padding-top: 75px;
+}
+
+.login-section .card-form {
+  background-color: white;
+}
+
+.login-section .card-footer {
+  font-size: 0.85em;
+}
+
+.login-section .brand {
+  color: black;
+  text-shadow: 1px 1px 1px black;
+}
+
+.main-footer {
+  font-size: 0.85em;
+}
+
+.hover:hover {
+  text-decoration: underline;
+}
+
+
+/* https://www.color-hex.com/color-palette/59943 */
+
