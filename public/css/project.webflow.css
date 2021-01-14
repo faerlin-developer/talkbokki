@@ -32,7 +32,7 @@ a {
   background-clip: border-box;
 }
 
-.container-title {
+.container-friends-header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -66,7 +66,7 @@ a {
   font-weight: 700;
 }
 
-.div-user {
+.div-friends-user {
   margin-right: 15px;
   margin-left: 15px;
   border-style: solid;
@@ -74,14 +74,14 @@ a {
   border-color: grey grey #e0e0e0;
 }
 
-.heading-7 {
+.h1-friends-user {
   display: inline-block;
   margin-left: 10px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.div-friends {
+.div-friends-header {
   display: block;
   margin-left: 15px;
   -webkit-box-orient: horizontal;
@@ -122,7 +122,7 @@ a {
   display: inline-block;
 }
 
-.div-friend {
+.div-friends-friend {
   display: block;
   margin: 5px 15px;
   text-decoration: none;
@@ -137,7 +137,7 @@ a {
   font-size: 14px;
 }
 
-.image-3 {
+.img-friends-user {
   display: inline-block;
 }
 
@@ -211,7 +211,7 @@ a {
   align-items: stretch;
 }
 
-.section-2 {
+.section-chat-bottom {
   position: fixed;
   left: 0%;
   top: auto;
@@ -224,10 +224,10 @@ a {
 .body {
   margin-left: 0px;
   border-top: 1px solid #000;
-  background-color: #a9c8eb;
+  background-color: #fff;
 }
 
-.textarea {
+.textarea-chat-bottom {
   display: block;
   overflow: auto;
   margin-top: 0px;
@@ -256,9 +256,9 @@ a {
   flex: 1;
 }
 
-.section-4 {
+.section-chat-top {
   margin: 5px 0px 15px;
-  background-color: #a9c8eb;
+  background-color: #fff;
 }
 
 .image-5 {
@@ -268,7 +268,7 @@ a {
   margin-left: 0px;
 }
 
-.div-block-8 {
+.div-chat-header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -277,6 +277,15 @@ a {
   min-height: 0px;
   margin-right: 15px;
   margin-left: 15px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
   -o-object-fit: fill;
   object-fit: fill;
   -o-object-position: 50% 50%;
@@ -292,7 +301,7 @@ a {
   font-weight: 700;
 }
 
-.div-block-10 {
+.div-chat-user {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -304,7 +313,7 @@ a {
   justify-content: flex-end;
 }
 
-.div-block-11 {
+.div-chat-user-text {
   display: inline-block;
   padding: 7px;
   border: 1px solid transparent;
@@ -312,17 +321,17 @@ a {
   background-color: #ffe812;
 }
 
-.div-block-12 {
+.div-chat-friend {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin: 10px 15px;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -333,11 +342,12 @@ a {
   display: block;
   margin-bottom: 7px;
   padding: 7px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 .link-block {
@@ -355,11 +365,11 @@ a {
   margin-bottom: 10px;
 }
 
-.div-block-15 {
+.div-chat-friend-header {
   display: block;
   margin-top: 0px;
-  margin-right: 15px;
-  margin-bottom: 7px;
+  margin-right: 0px;
+  margin-bottom: 0px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   -ms-grid-row-align: auto;
@@ -370,7 +380,7 @@ a {
   flex: 0 auto;
 }
 
-.text-block-5 {
+.text-chat-friend-header {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
@@ -409,7 +419,7 @@ a {
   color: #000;
 }
 
-.div-block-145 {
+.div-chat-header-arrow {
   padding-top: 10px;
   padding-right: 15px;
   padding-bottom: 10px;
@@ -419,12 +429,25 @@ a {
   align-self: center;
 }
 
-.div-block-146 {
+.div-chat-header-text {
+  display: block;
   margin-left: 0px;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .container-2 {
@@ -449,7 +472,7 @@ a {
   height: 60px;
 }
 
-.image-6 {
+.img-chat-friend-header {
   display: inline-block;
   margin-right: 5px;
 }
@@ -535,7 +558,7 @@ a {
   object-fit: fill;
 }
 
-.div-block-150 {
+.div-chat-bottom {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -554,7 +577,7 @@ a {
   flex-wrap: nowrap;
 }
 
-.div-block-151 {
+.div-chat-bottom-send {
   margin-top: 0px;
   margin-right: 5px;
   margin-bottom: 0px;
@@ -615,7 +638,7 @@ a {
   text-align: left;
 }
 
-.h1-friends {
+.h1-friends-header {
   display: inline;
   font-size: 20px;
   font-weight: 700;
@@ -638,7 +661,7 @@ a {
   border-bottom: 0px solid #000;
 }
 
-.section-nav {
+.section-friends-nav {
   position: fixed;
   left: 0%;
   right: 0%;
@@ -666,7 +689,7 @@ a {
   font-weight: 700;
 }
 
-.container-friends {
+.container-friends-friend {
   overflow: visible;
   height: auto;
   max-height: none;
@@ -674,12 +697,12 @@ a {
   object-fit: none;
 }
 
-.div-friend-count {
+.div-friends-count {
   display: block;
   margin: 5px 15px;
 }
 
-.text-block-title {
+.textfield-find-body-middle-text {
   display: inline-block;
   margin-top: 10px;
   margin-right: 5px;
@@ -688,19 +711,19 @@ a {
   font-weight: 400;
 }
 
-.text-block-count {
+.text-friends-count {
   display: inline-block;
   color: #838383;
   font-size: 12px;
   font-weight: 400;
 }
 
-.img-friend {
+.img-friends-friend {
   display: inline-block;
   margin-right: 15px;
 }
 
-.h1-friend {
+.h1-friends-friend {
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -709,37 +732,50 @@ a {
   font-size: 14px;
 }
 
-.div-dummy {
+.div-friends-dummy {
   height: 60px;
 }
 
-.container-nav {
+.container-friends-nav {
   height: 100%;
+  border-top: 1px solid #000;
 }
 
-.div-nav {
+.div-friends-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 15px;
+  margin-left: 15px;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  border-top: 1px solid #000;
+  border-top: 0px solid #000;
   border-bottom: 0px solid #000;
   background-color: #fff;
   text-align: center;
   background-clip: border-box;
 }
 
-.div-link-friends {
+.div-friends-nav-friends {
   margin-top: 10px;
   margin-bottom: 10px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-right: 2px solid #ffe812;
+  border-left: 2px solid #ffe812;
 }
 
-.div-link-map {
+.div-friends-nav-find {
   margin-top: 10px;
   margin-bottom: 10px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .body-friends {
@@ -867,6 +903,155 @@ a {
   object-fit: none;
 }
 
+.form-block-3 {
+  display: inline;
+}
+
+.div-block-153 {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container-5 {
+  display: block;
+}
+
+.div-block-154 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.body-find {
+  margin-left: 0px;
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+
+.section-find {
+  margin: 5px 0px 15px;
+  background-color: #fff;
+}
+
+.div-find-body-top-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.section-find-body {
+  margin-top: 5px;
+}
+
+.div-find-body-top-header-arrow {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+.text-find-body-top-header-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.div-find-body-top-search {
+  margin-right: 15px;
+  margin-left: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.textfield-find-body-top-search {
+  border-radius: 5px;
+}
+
+.div-find-body-bottom-entry {
+  display: block;
+  margin: 5px 15px;
+  text-decoration: none;
+}
+
+.div-find-body-middle-text {
+  display: block;
+  margin: 5px 15px;
+}
+
+.section-find-nav {
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0px;
+  z-index: 0;
+  height: auto;
+  float: left;
+  background-clip: border-box;
+}
+
+.container-find-nav {
+  height: 100%;
+  border-top: 1px solid #000;
+}
+
+.div-find-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15px;
+  margin-left: 15px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-top: 0px solid #000;
+  border-bottom: 0px solid #000;
+  background-color: #fff;
+  text-align: center;
+  background-clip: border-box;
+}
+
+.div-find-nav-friends {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.div-find-nav-search {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-right: 2px solid #ffe812;
+  border-left: 2px solid #ffe812;
+}
+
+.div-chat-friend-text {
+  display: inline-block;
+  padding: 7px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.div-chat-dummy {
+  height: 65px;
+  line-height: 20px;
+}
+
 @media screen and (max-width: 767px) {
   .img-search {
     margin-top: 10px;
@@ -879,6 +1064,26 @@ a {
   .text-block-7 {
     -o-object-fit: fill;
     object-fit: fill;
+  }
+
+  .container-friends-nav {
+    border-top: 1px solid #000;
+  }
+
+  .div-friends-nav {
+    margin-right: 15px;
+    margin-left: 15px;
+    border-top-width: 0px;
+  }
+
+  .container-find-nav {
+    border-top: 1px solid #000;
+  }
+
+  .div-find-nav {
+    margin-right: 15px;
+    margin-left: 15px;
+    border-top-width: 0px;
   }
 }
 

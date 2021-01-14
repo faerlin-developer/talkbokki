@@ -1,10 +1,10 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Fri Jan 08 2021 02:35:16 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Jan 14 2021 01:43:11 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ff6452d0093ed5817bd8f99" data-wf-site="5ff6250c3fe4fa6a9bd79638">
 
 <head>
   <meta charset="utf-8">
-  <title>Talkbokki - Chat</title>
+  <title>Chat</title>
   <meta content="Chat" property="og:title">
   <meta content="Chat" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -20,56 +20,60 @@
 </head>
 
 <body class="body">
-  <div class="section-4">
-    <div class="w-container">
-      <div class="div-block-8">
-        <a href="friends.html" class="div-block-145 w-inline-block"><img src="images/arrow-left-solid.svg"
+  <div class="section-chat-top">
+    <div class="container-chat-header w-container">
+      <div class="div-chat-header">
+        <a href="friends.html" class="div-chat-header-arrow w-inline-block"><img src="images/arrow-left-solid.svg"
             loading="lazy" width="18" alt="" class="image-5"></a>
-        <div class="div-block-146">
+        <div class="div-chat-header-text">
           <div class="text-block-3">Mina</div>
         </div>
       </div>
     </div>
-    <div class="w-container">
-      <div class="div-block-10">
-        <div class="div-block-11">
-          <div>This is some text inside of a div block.</div>
+    <div class="container-chat-body w-container">
+      <div class="div-chat-user">
+        <div class="div-chat-user-text">
+          <div class="text-chat-user">Hi Mina!</div>
         </div>
       </div>
-      <div class="div-block-12">
-        <div class="div-block-15"><img src="images/user-circle-regular.svg" loading="lazy" width="25" alt=""
-            class="image-6">
-          <div class="text-block-5">Mina</div>
-        </div>
-        <div class="div-block-13">
-          <div class="text-block-6">This is some text inside of a div block.</div>
-        </div>
-        <div class="div-block-144">
-          <div class="text-block-6">This is some other text inside another div block. The quick brown fox jumped over
-            the lazy dog.</div>
+      <div class="div-chat-friend">
+        <div class="div-chat-friend-header"><img src="images/user-circle-regular.svg" loading="lazy" width="25" alt=""
+            class="img-chat-friend-header">
+          <div class="text-chat-friend-header">Mina</div>
         </div>
       </div>
-      <div class="div-block-10-copy">
-        <div class="div-block-11">
-          <div>This is some text inside of a div block.</div>
+      <div class="div-chat-friend">
+        <div class="div-chat-friend-text">
+          <div class="text-block-6">Hey! How are you?</div>
         </div>
       </div>
-      <div class="div-block-10-copy">
-        <div class="div-block-11">
-          <div>This is some text inside of a div block. This is some other text inside another div block. The quick
-            brown fox jumped over the lazy dog.</div>
+      <div class="div-chat-friend">
+        <div class="div-chat-friend-text">
+          <div>It&#x27;s snowing really hard!</div>
         </div>
       </div>
-      <div class="div-block-10-copy-copy"></div>
+      <div class="div-chat-user">
+        <div class="div-chat-user-text">
+          <div>It&#x27;s snowing really hard!</div>
+        </div>
+      </div>
+      <div class="div-chat-user">
+        <div class="div-chat-user-text">
+          <div>The quick brown fox jumped over the lazy dog!</div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="section-2">
-    <div class="w-container">
-      <div class="div-block-150">
+  <div class="container-chat-dummy w-container">
+    <div class="div-chat-dummy"></div>
+  </div>
+  <div class="section-chat-bottom">
+    <div class="container-chat-bottom w-container">
+      <div class="div-chat-bottom">
         <div class="form-block w-form">
           <form id="email-form" name="email-form" data-name="Email Form" class="form"><textarea
               placeholder="Example Text" maxlength="5000" id="field" name="field" autofocus="true"
-              class="textarea w-input"></textarea></form>
+              class="textarea-chat-bottom w-input"></textarea></form>
           <div class="w-form-done">
             <div>Thank you! Your submission has been received!</div>
           </div>
@@ -77,8 +81,8 @@
             <div>Oops! Something went wrong while submitting the form.</div>
           </div>
         </div>
-        <a href="#" class="div-block-151 w-inline-block"><img src="images/caret-right-solid.svg" loading="lazy"
-            width="21" alt=""></a>
+        <a href="#" class="div-chat-bottom-send w-inline-block"><img src="images/caret-right-solid.svg" loading="lazy"
+            width="21" alt="" class="img-chat-bottom-send"></a>
       </div>
     </div>
   </div>
