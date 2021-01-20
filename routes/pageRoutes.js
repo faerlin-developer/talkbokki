@@ -4,8 +4,7 @@ const pageController = require('../controllers/pageController');
 
 const router = express.Router();
 
-router.post('/signup', authController.signup);
-router.post('/login', authController.login);
-router.get('/logout', authController.logout);
+router.get('/', authController.autoLogin, pageController.login);
+router.get('/login.html', authController.autoLogin, pageController.login);
 
 module.exports = router;

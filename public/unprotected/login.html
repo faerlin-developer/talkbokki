@@ -30,12 +30,12 @@
             <div class="card-body">
               <form id="form-login">
                 <div class="form-group">
-                  <input id="input-email" type="email" class="form-control form-control-md" placeholder="Email"
-                    required>
+                  <input id="input-email" type="email" autocomplete="username" class="form-control form-control-md"
+                    placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                  <input id="input-password" type="password" class="form-control form-control-md" placeholder="Password"
-                    required>
+                  <input id="input-password" type="password" autocomplete="new-password"
+                    class="form-control form-control-md" placeholder="Password" required>
                 </div>
                 <button id="btn-login" type="submit" class="btn btn-outline-primary btn-block">Log
                   In</button>
@@ -76,7 +76,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 id="h-modal-title" class="modal-title">Sign Up!</h5>
-          <button class="close d-block" data-dismiss="modal">
+          <button id="button-modal-close" class="close d-block" data-dismiss="modal">
             <span>&times;</span>
           </button>
         </div>
@@ -86,19 +86,21 @@
             oninput='inputConfirmPassword.setCustomValidity(inputPassword.value != inputConfirmPassword.value ? "Passwords do not match." : "")'>
             <div class="form-group">
               <label id="label-modal-username" for="username">Username</label>
-              <input class="form-control" type="text" required>
+              <input id="input-modal-username" class="form-control" type="text" required>
             </div>
             <div class="form-group">
               <label id="label-modal-email" for="email">Email</label>
-              <input class="form-control" type="email" required>
+              <input id="input-modal-email" class="form-control" type="email" autocomplete="username" required>
             </div>
             <div class="form-group">
               <label id="label-modal-password" for="password">Password</label>
-              <input class="form-control" type="password" name="inputPassword" required>
+              <input id="input-modal-password" class="form-control" type="password" autocomplete="new-password"
+                name="inputPassword" required>
             </div>
             <div class="form-group">
               <label id="label-modal-confirmPassword" for="confirmPassword">Confirm Password</label>
-              <input class="form-control" type="password" name="inputConfirmPassword" required>
+              <input id="input-modal-confirmPassword" class="form-control" type="password" autocomplete="new-password"
+                name="inputConfirmPassword" required>
             </div>
             <hr />
             <button id="btn-modal-submit" type="submit" class="btn btn-primary btn-block">Submit</button>
@@ -118,7 +120,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
     integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
-  <script src="js/login.js"></script>
+
+  <script src="js/loginModel.js"></script>
+  <script src="js/loginView.js"></script>
+  <script src="js/loginController.js"></script>
 
 </body>
 

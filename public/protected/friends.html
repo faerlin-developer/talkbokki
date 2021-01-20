@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Faerlin&#x27;s Dynamite Project</title>
+  <title>Talkbokki - Friends</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -23,20 +23,24 @@
       <div class="div-friends-header">
         <h1 class="h1-friends-header">Friends</h1>
       </div>
+      <div class="textfield-sign-out"><a id="button-log-out" href="#">Log Out</a>
+      </div>
     </div>
   </div>
   <div class="section-friends-body">
     <div class="container-friends-user w-container">
       <div class="div-friends-user"><img src="images/user-circle-solid.svg" loading="lazy" width="40" alt=""
           class="img-friends-user">
-        <h1 class="h1-friends-user"><strong class="bold-text">Faerlin</strong></h1>
+        <h1 class="h1-friends-user"><strong id="text-username" class="bold-text"></strong></h1>
       </div>
       <div class="div-friends-count">
-        <div class="textfield-find-body-middle-text">Friends </div>
-        <div class="text-friends-count"> 3</div>
+        <div class="textfield-find-body-middle-text">Friends</div>
+        <div id="text-friends-count" class="text-friends-count">0</div>
       </div>
     </div>
-    <div class="container-friends-friend w-container">
+    <div id="div-friends" class="container-friends-friend w-container">
+
+      <!--
       <a href="chat.html" class="div-friends-friend w-inline-block"><img src="images/user-circle-regular.svg"
           loading="lazy" width="30" alt="" class="img-friends-friend">
         <h1 class="h1-friends-friend">Mina</h1>
@@ -49,6 +53,8 @@
           loading="lazy" width="30" alt="" class="img-friends-friend">
         <h1 class="h1-friends-friend">Kevin</h1>
       </a>
+      -->
+
     </div>
     <div class="container-friends-dummy w-container">
       <div class="div-friends-dummy"></div>
@@ -59,7 +65,7 @@
       <div class="div-friends-nav">
         <a href="#" class="div-friends-nav-friends w-inline-block"><img src="images/user-solid.svg" loading="lazy"
             height="25" alt=""></a>
-        <a href="find.html" class="div-friends-nav-find w-inline-block"><img src="images/search-solid.svg"
+        <a href="#" id="button-find" class="div-friends-nav-find w-inline-block"><img src="images/search-solid.svg"
             loading="lazy" height="25" alt=""></a>
       </div>
     </div>
@@ -69,6 +75,12 @@
     crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/friendsModel.js"></script>
+  <script src="js/friendsView.js"></script>
+  <script src="js/friendsController.js"></script>
+
 </body>
 
 </html>

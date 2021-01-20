@@ -711,6 +711,14 @@ a {
   font-weight: 400;
 }
 
+.textfield-sign-out {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .text-friends-count {
   display: inline-block;
   color: #838383;
@@ -976,6 +984,7 @@ a {
 }
 
 .div-find-body-bottom-entry {
+  color: black;
   display: block;
   margin: 5px 15px;
   text-decoration: none;

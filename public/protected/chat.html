@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Chat</title>
+  <title>Talkbokki - Chat</title>
   <meta content="Chat" property="og:title">
   <meta content="Chat" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -26,42 +26,51 @@
         <a href="friends.html" class="div-chat-header-arrow w-inline-block"><img src="images/arrow-left-solid.svg"
             loading="lazy" width="18" alt="" class="image-5"></a>
         <div class="div-chat-header-text">
-          <div class="text-block-3">Mina</div>
+          <div id="div-username" class="text-block-3"></div>
         </div>
       </div>
     </div>
-    <div class="container-chat-body w-container">
+    <div id="div-chat" class="container-chat-body w-container">
+
+      <!--
       <div class="div-chat-user">
         <div class="div-chat-user-text">
           <div class="text-chat-user">Hi Mina!</div>
         </div>
       </div>
+
       <div class="div-chat-friend">
         <div class="div-chat-friend-header"><img src="images/user-circle-regular.svg" loading="lazy" width="25" alt=""
             class="img-chat-friend-header">
           <div class="text-chat-friend-header">Mina</div>
         </div>
       </div>
+
       <div class="div-chat-friend">
         <div class="div-chat-friend-text">
           <div class="text-block-6">Hey! How are you?</div>
         </div>
       </div>
+
       <div class="div-chat-friend">
         <div class="div-chat-friend-text">
           <div>It&#x27;s snowing really hard!</div>
         </div>
       </div>
+
       <div class="div-chat-user">
         <div class="div-chat-user-text">
           <div>It&#x27;s snowing really hard!</div>
         </div>
       </div>
+
       <div class="div-chat-user">
         <div class="div-chat-user-text">
           <div>The quick brown fox jumped over the lazy dog!</div>
         </div>
       </div>
+    -->
+
     </div>
   </div>
   <div class="container-chat-dummy w-container">
@@ -72,7 +81,7 @@
       <div class="div-chat-bottom">
         <div class="form-block w-form">
           <form id="email-form" name="email-form" data-name="Email Form" class="form"><textarea
-              placeholder="Example Text" maxlength="5000" id="field" name="field" autofocus="true"
+              placeholder="Type here..." maxlength="5000" id="input-message" name="field" autofocus="true"
               class="textarea-chat-bottom w-input"></textarea></form>
           <div class="w-form-done">
             <div>Thank you! Your submission has been received!</div>
@@ -81,8 +90,8 @@
             <div>Oops! Something went wrong while submitting the form.</div>
           </div>
         </div>
-        <a href="#" class="div-chat-bottom-send w-inline-block"><img src="images/caret-right-solid.svg" loading="lazy"
-            width="21" alt="" class="img-chat-bottom-send"></a>
+        <a id="button-send" href="#" class="div-chat-bottom-send w-inline-block"><img src="images/caret-right-solid.svg"
+            loading="lazy" width="21" alt="" class="img-chat-bottom-send"></a>
       </div>
     </div>
   </div>
@@ -91,6 +100,12 @@
     crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/chatModel.js"></script>
+  <script src="js/chatView.js"></script>
+  <script src="js/chatController.js"></script>
+
 </body>
 
 </html>
