@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
-
+const compression = require('compression');
 
 /* Configure Environment */
 dotenv.config({ path: './config.env' });
@@ -22,6 +22,7 @@ const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
+app.use(compression());
 app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
