@@ -3,8 +3,8 @@
 class Model {
 
     constructor() {
-        this.DOMAIN = 'http://localhost:3000';
-        // this.DOMAIN = 'https://talkbokki.azurewebsites.net'
+        // this.DOMAIN = 'http://localhost:3000';
+        this.DOMAIN = '';
         this.URL_SIGNUP = `${this.DOMAIN}/api/auth/signup`;
         this.URL_LOGIN = `${this.DOMAIN}/api/auth/login`;
         this.URL_FRIENDS = `${this.DOMAIN}/api/messenger/friends`;
