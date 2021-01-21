@@ -15,8 +15,6 @@ const messageSchema = new mongoose.Schema(
         message: {
             type: String,
             required: [true, 'A message must have a message'],
-            default: '',
-            trim: true,
         },
         createdAt: {
             type: Date,
