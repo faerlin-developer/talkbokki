@@ -40,6 +40,8 @@ class View {
                          <div class="text-block-6">${message.message}</div></div></div>`;
         }
         this.DOM.divChat.insertAdjacentHTML('beforeend', html);
+        this.DOM.divChat.scrollTop = this.DOM.divChat.scrollHeight;
+
     }
 
     displayMessages(messages, username, friendUsername) {
