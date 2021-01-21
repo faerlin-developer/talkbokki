@@ -49,3 +49,5 @@ Display the logs:
 ```
 heroku logs --tail
 ```
+
+Test compression at `https://www.giftofspeed.com/gzip-test/`.
