@@ -35,7 +35,7 @@ view.DOM.inputMessage.addEventListener('keypress', async function (event) {
         event.preventDefault();
         const message = view.getMessage();
         console.log('----');
-        console.log(message);
+        console.log('|' + message + '|');
         console.log('---');
         model.socket.emit('message', { from: model.username, to: model.friendUsername, message: message });
     }
