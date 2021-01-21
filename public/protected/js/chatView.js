@@ -6,7 +6,7 @@ class View {
         this.DOM = {
             divChat: document.getElementById('div-chat'),
             inputMessage: document.getElementById('input-message'),
-            buttonSend: document.getElementById('button-send'),
+            // buttonSend: document.getElementById('button-send'),
             divFriendUsername: document.getElementById('div-username'),
             documentElement: document.documentElement
         }

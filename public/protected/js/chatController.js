@@ -21,12 +21,14 @@ function init() {
     });
 }
 
+/*
 view.DOM.buttonSend.addEventListener('click', async function (event) {
 
     event.preventDefault();
     const message = view.getMessage();
     model.socket.emit('message', { from: model.username, to: model.friendUsername, message: message });
 })
+*/
 
 view.DOM.inputMessage.addEventListener('keypress', async function (event) {
     if (event.key === 'Enter') {
