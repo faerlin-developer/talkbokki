@@ -8,7 +8,8 @@ class View {
             inputMessage: document.getElementById('input-message'),
             buttonSend: document.getElementById('button-send'),
             divFriendUsername: document.getElementById('div-username'),
-            body: document.getElementById('body')
+            body: document.getElementById('body'),
+            scrollableContent: document.getElementById('section-chat-top')
         }
 
         this.mostRecentMessageIsUser = true;
@@ -41,8 +42,8 @@ class View {
                          <div class="text-block-6">${message.message}</div></div></div>`;
         }
         this.DOM.divChat.insertAdjacentHTML('beforeend', html);
-        this.DOM.body.scrollTop = this.DOM.body.scrollHeight;
-        console.log(this.DOM.body.scrollHeight);
+        //this.DOM.body.scrollTop = this.DOM.body.scrollHeight;
+        console.log(this.DOM.scrollableContent.scrollTop);
 
     }
 
