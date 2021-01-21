@@ -7,7 +7,8 @@ class View {
             divChat: document.getElementById('div-chat'),
             inputMessage: document.getElementById('input-message'),
             buttonSend: document.getElementById('button-send'),
-            divFriendUsername: document.getElementById('div-username')
+            divFriendUsername: document.getElementById('div-username'),
+            body: document.getElementById('body')
         }
 
         this.mostRecentMessageIsUser = true;
@@ -40,7 +41,7 @@ class View {
                          <div class="text-block-6">${message.message}</div></div></div>`;
         }
         this.DOM.divChat.insertAdjacentHTML('beforeend', html);
-        this.DOM.divChat.scrollTop = this.DOM.divChat.scrollHeight;
+        this.DOM.body.scrollTop = this.DOM.body.scrollHeight;
 
     }
 
