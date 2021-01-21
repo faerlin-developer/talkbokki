@@ -42,6 +42,7 @@ class View {
         }
         this.DOM.divChat.insertAdjacentHTML('beforeend', html);
         this.DOM.body.scrollTop = this.DOM.body.scrollHeight;
+        console.log(this.DOM.body.scrollHeight);
 
     }
 
