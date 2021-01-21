@@ -34,10 +34,9 @@ view.DOM.inputMessage.addEventListener('keypress', async function (event) {
     if (event.key === 'Enter') {
         event.preventDefault();
         const message = view.getMessage();
-        console.log('----');
-        console.log('|' + message + '|');
-        console.log('---');
-        model.socket.emit('message', { from: model.username, to: model.friendUsername, message: message });
+        if (message !== '') {
+            model.socket.emit('message', { from: model.username, to: model.friendUsername, message: message });
+        }
     }
 });
 
